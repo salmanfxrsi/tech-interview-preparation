@@ -23,30 +23,40 @@ using namespace std;
 int main()
 {
     int n = 5;
-    int starCounter = 1;
 
-    for (int i = n - 1; i >= 1; i--)
+    // first half of pattern
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = i; j >= 1; j--)
+        // gap printer loop
+        for (int j = i; j <= n - 1; j++)
         {
-            cout << "";
+            cout << " ";
         }
 
-        for (int j = 1; j <= starCounter; j++)
+        // star printer loop
+        for (int j = 1; j <= (i * 2) - 1; j++)
         {
             cout << "*";
         }
 
-        starCounter += 2;
         cout << "\n";
     }
 
-    for (int i = 0; i <= n - 1; i++)
+    // second half of pattern
+    for (int i = n - 1; i >= 1; i--)
     {
-        for (int j = i; j <= n - 1; j--)
+        // gap printer loop
+        for (int j = i; j <= n - 1; j++)
         {
             cout << " ";
         }
+
+        // star printer loop
+        for (int j = 1; j <= (i * 2) - 1; j++)
+        {
+            cout << "*";
+        }
+
         cout << "\n";
     }
 
