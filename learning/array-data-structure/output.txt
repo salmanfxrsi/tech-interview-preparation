@@ -1,1 +1,2 @@
-10 20 
+Smallest in array: 4
+Largest in array: 75
