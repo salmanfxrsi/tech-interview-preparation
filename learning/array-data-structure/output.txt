@@ -1,2 +1,4 @@
-Smallest in array: 4
-Largest in array: 75
+1 2 3 
+in function
+in main
+2 4 6 
